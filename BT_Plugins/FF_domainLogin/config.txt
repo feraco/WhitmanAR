@@ -1,0 +1,31 @@
+//buzztouch plugin info
+uniquePluginId: FF_domainLogin
+displayAs: Domain Log In
+category: Screen
+loadClassOrActionName: FF_domainLogin
+hasChildItems: No
+supportedDevices: iosAndAndroid
+
+//author info
+authorName: Frederick Feraco
+authorEmail: admin@buddyappdevelopment.com
+authorBuzztouchURL: https://www.buzztouch.com/feraco
+authorWebsiteURL: http://buddyappdevelopment.com/
+authorTwitterURL: 
+authorFacebookURL: 
+authorLinkedInURL: 
+authorYouTubeURL: 
+
+//version info
+versionNumber: 1.0
+versionString: v1.0
+updateURL: https://www.buzztouch.com/plugins/update.php?pid=8B37282626E48FC356CB982
+downloadURL: https://www.buzztouch.com/plugins/download.php?pid=8B37282626E48FC356CB982
+
+//default json data
+defaultJSONData:
+{"navBarTitleText":"[itemNickname]"}
+
+//description for control panel. Up to 250 characters. No HTML.
+shortDescription:
+Provide a short description for the plugin to display in the control panel.

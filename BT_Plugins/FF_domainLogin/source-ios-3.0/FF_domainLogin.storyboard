@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <development version="7000" identifier="xcode"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+        <!--Enter email-->
+        <scene sceneID="ZQE-7Q-mch">
+            <objects>
+                <viewController id="dYv-KD-qWk" customClass="EmailValidator" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="e6J-8O-McY"/>
+                        <viewControllerLayoutGuide type="bottom" id="W5v-ub-yAH"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="myx-kQ-zCf">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="email" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="oMT-lC-bdC">
+                                <rect key="frame" x="16" y="184" width="568" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="aYx-Ga-veh"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="emailAddress" returnKeyType="done" enablesReturnKeyAutomatically="YES"/>
+                                <connections>
+                                    <outlet property="delegate" destination="dYv-KD-qWk" id="3c9-Mz-uz4"/>
+                                </connections>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Login using your school email:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GIz-44-7zc">
+                                <rect key="frame" x="16" y="132" width="568" height="36"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="36" id="kOr-BS-Smi"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="oMT-lC-bdC" secondAttribute="trailing" constant="16" id="0DY-yF-GAH"/>
+                            <constraint firstItem="oMT-lC-bdC" firstAttribute="leading" secondItem="myx-kQ-zCf" secondAttribute="leading" constant="16" id="HDe-Uz-92w"/>
+                            <constraint firstAttribute="trailing" secondItem="GIz-44-7zc" secondAttribute="trailing" constant="16" id="HFf-3S-7sR"/>
+                            <constraint firstItem="GIz-44-7zc" firstAttribute="top" secondItem="e6J-8O-McY" secondAttribute="bottom" constant="68" id="JgQ-A2-Hom"/>
+                            <constraint firstItem="GIz-44-7zc" firstAttribute="leading" secondItem="myx-kQ-zCf" secondAttribute="leading" constant="16" id="LDH-me-ejn"/>
+                            <constraint firstItem="oMT-lC-bdC" firstAttribute="top" secondItem="GIz-44-7zc" secondAttribute="bottom" constant="16" id="dQu-yG-xu5"/>
+                        </constraints>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="xO5-xs-9c1" appends="YES" id="bJf-Wu-eK8"/>
+                        </connections>
+                    </view>
+                    <navigationItem key="navigationItem" title="Enter email" id="7qp-ql-AuM">
+                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="6MQ-ok-fG1">
+                            <connections>
+                                <action selector="cancel:" destination="dYv-KD-qWk" id="4kE-JZ-GmI"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" systemItem="done" id="4LL-mV-6Lg">
+                            <connections>
+                                <action selector="save:" destination="dYv-KD-qWk" id="HU2-ZS-lys"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="emailTextField" destination="oMT-lC-bdC" id="70r-9O-TCs"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aXB-Ak-G8k" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="xO5-xs-9c1">
+                    <connections>
+                        <action selector="dismissKeyboard:" destination="dYv-KD-qWk" id="pVL-NH-OsH"/>
+                        <outlet property="delegate" destination="dYv-KD-qWk" id="qpz-6z-jRj"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="2096.8000000000002" y="138.98050974512745"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="3XE-tP-ogJ">
+            <objects>
+                <navigationController storyboardIdentifier="showEmailValidatorNav" automaticallyAdjustsScrollViewInsets="NO" id="aiG-SP-LFh" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="8B5-Zd-Xe0">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="dYv-KD-qWk" kind="relationship" relationship="rootViewController" id="Djf-o0-ZJC"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4aK-O2-2Nc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1157.5999999999999" y="138.98050974512745"/>
+        </scene>
+    </scenes>
+</document>
