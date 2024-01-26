@@ -1,4 +1,7 @@
 # WhitmanAR: Augmented Reality for Educational Enhancement
+## About the Creator
+
+WhitmanAR was created by Frederick Feraco as a mobile app development project in collaboration with the computer science class at Walt Whitman High School. This initiative showcases the practical application of technology skills and collaborative effort in creating a tool that benefits the entire school community.
 
 ## Introduction
 
